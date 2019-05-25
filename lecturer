@@ -1,0 +1,55 @@
+package HW3;
+
+public class Lecturer {
+
+	private String name;
+	private int numOfPenFalls;
+	private String favoriteIceCream;
+	private int serialNumber;
+	private int counter=1000;
+	
+	Lecturer(){
+	this.name = null;
+	this.numOfPenFalls = 0;
+	this.favoriteIceCream = null;
+	this.serialNumber = 0;
+	}
+	Lecturer(String name, int numOfPenFalls, String favoriteIceCream){
+	this.name = name;
+	this.numOfPenFalls = numOfPenFalls;
+	this.favoriteIceCream = favoriteIceCream;
+	this.serialNumber = counter;
+	counter++;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getNumOfPenFalls() {
+		return numOfPenFalls;
+	}
+	public void setNumOfPenFalls(int numOfPenFalls) {
+		this.numOfPenFalls = numOfPenFalls;
+	}
+	
+	public String getFavoriteIceCream() {
+		return favoriteIceCream;
+	}
+	public void setFavoriteIceCream(String favoriteIceCream) {
+		this.favoriteIceCream = favoriteIceCream;
+	}
+	public int getSerialNumber() {
+		return serialNumber;
+	}
+	
+	@Override
+	public String toString() {
+		return "Lecturer -> name = " + name + " \n\tnumOfPenFalls = " + numOfPenFalls + " \n\tfavoriteIceCream = " + favoriteIceCream
+				+ " \n\tserialNumber=" + serialNumber + " \n\tcounter=" + counter ;
+	}
+	
+	
+}
